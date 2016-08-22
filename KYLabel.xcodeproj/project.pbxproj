@@ -15,6 +15,9 @@
 		B40185741CEEFE4A00ECD9B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40185721CEEFE4A00ECD9B3 /* LaunchScreen.storyboard */; };
 		B401857F1CEEFE4A00ECD9B3 /* KYLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B401857E1CEEFE4A00ECD9B3 /* KYLabelTests.m */; };
 		B401858A1CEEFE4A00ECD9B3 /* KYLabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B40185891CEEFE4A00ECD9B3 /* KYLabelUITests.m */; };
+		B40185991CEEFE8400ECD9B3 /* KYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B40185981CEEFE8400ECD9B3 /* KYLabel.m */; };
+		B401859E1CEF00D700ECD9B3 /* NSString+KYEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = B401859D1CEF00D700ECD9B3 /* NSString+KYEmoji.m */; };
+		B41C85231CF7EDA800818DDD /* KYLabel+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = B41C85221CF7EDA800818DDD /* KYLabel+Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		B40185851CEEFE4A00ECD9B3 /* KYLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40185891CEEFE4A00ECD9B3 /* KYLabelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLabelUITests.m; sourceTree = "<group>"; };
 		B401858B1CEEFE4A00ECD9B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40185971CEEFE8400ECD9B3 /* KYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLabel.h; sourceTree = "<group>"; };
+		B40185981CEEFE8400ECD9B3 /* KYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLabel.m; sourceTree = "<group>"; };
+		B401859C1CEF00D700ECD9B3 /* NSString+KYEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KYEmoji.h"; sourceTree = "<group>"; };
+		B401859D1CEF00D700ECD9B3 /* NSString+KYEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYEmoji.m"; sourceTree = "<group>"; };
+		B41C85211CF7EDA800818DDD /* KYLabel+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KYLabel+Tool.h"; sourceTree = "<group>"; };
+		B41C85221CF7EDA800818DDD /* KYLabel+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KYLabel+Tool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		B40185631CEEFE4A00ECD9B3 /* KYLabel */ = {
 			isa = PBXGroup;
 			children = (
+				B401859A1CEEFEAB00ECD9B3 /* View */,
 				B40185671CEEFE4A00ECD9B3 /* AppDelegate.h */,
 				B40185681CEEFE4A00ECD9B3 /* AppDelegate.m */,
 				B401856A1CEEFE4A00ECD9B3 /* ViewController.h */,
@@ -138,6 +148,19 @@
 				B401858B1CEEFE4A00ECD9B3 /* Info.plist */,
 			);
 			path = KYLabelUITests;
+			sourceTree = "<group>";
+		};
+		B401859A1CEEFEAB00ECD9B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B40185971CEEFE8400ECD9B3 /* KYLabel.h */,
+				B40185981CEEFE8400ECD9B3 /* KYLabel.m */,
+				B41C85211CF7EDA800818DDD /* KYLabel+Tool.h */,
+				B41C85221CF7EDA800818DDD /* KYLabel+Tool.m */,
+				B401859C1CEF00D700ECD9B3 /* NSString+KYEmoji.h */,
+				B401859D1CEF00D700ECD9B3 /* NSString+KYEmoji.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,11 +226,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "刘洋洋";
+				ORGANIZATIONNAME = Young;
 				TargetAttributes = {
 					B40185601CEEFE4A00ECD9B3 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2B6TLMK62S;
 					};
 					B40185791CEEFE4A00ECD9B3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -273,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40185991CEEFE8400ECD9B3 /* KYLabel.m in Sources */,
+				B41C85231CF7EDA800818DDD /* KYLabel+Tool.m in Sources */,
 				B401856C1CEEFE4A00ECD9B3 /* ViewController.m in Sources */,
 				B40185691CEEFE4A00ECD9B3 /* AppDelegate.m in Sources */,
+				B401859E1CEF00D700ECD9B3 /* NSString+KYEmoji.m in Sources */,
 				B40185661CEEFE4A00ECD9B3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,9 +443,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KYLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liuyy.KYLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Young.KYLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,9 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KYLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liuyy.KYLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Young.KYLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -501,6 +528,7 @@
 				B40185901CEEFE4A00ECD9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B40185911CEEFE4A00ECD9B3 /* Build configuration list for PBXNativeTarget "KYLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +537,7 @@
 				B40185931CEEFE4A00ECD9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B40185941CEEFE4A00ECD9B3 /* Build configuration list for PBXNativeTarget "KYLabelUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +546,7 @@
 				B40185961CEEFE4A00ECD9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
